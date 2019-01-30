@@ -16,7 +16,8 @@ driver.manage().window().maximize();
 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 driver.get("http://newtours.demoaut.com/");
 demotour(driver);
-Register_button(driver);
+Businesslogic bl=new Businesslogic();
+bl.Register_button(driver);
 
 
 	}

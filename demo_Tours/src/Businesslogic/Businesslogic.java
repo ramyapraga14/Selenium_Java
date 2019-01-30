@@ -23,7 +23,8 @@ public static void demotour(WebDriver driver)
 	driver.findElement(Last_name).sendKeys("kamalesh");
 	driver.findElement(phone_Num).sendKeys("9791117260");
 	driver.findElement(email_id).sendKeys("but@gmail.com");
-	driver.findElement(Addre).sendKeys("No:334, 10th east");
+	Initializedemotours id=new Initializedemotours();
+	driver.findElement(id.Addre).sendKeys("No:334, 10th east");
 	driver.findElement(addres2).sendKeys("mkb nagar");
 	driver.findElement(cityy).sendKeys("ambattur");
 	driver.findElement(State_pro).sendKeys("chennai");
@@ -35,7 +36,7 @@ public static void demotour(WebDriver driver)
 	
 }
 
-public static void Register_button(WebDriver driver)
+public  void Register_button(WebDriver driver)
 {
 	driver.findElement(sub).click();
 }
